@@ -8,11 +8,7 @@
 
 import UIKit
 
-struct cellData {
-    let cell : Int!
-    let text : String!
-    let image : UIImage!
-}
+
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -31,10 +27,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.nameOfCar.text = arrayOfCellData[indexPath.row].text
         return cell
     }
-//    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 100
-//    }
+
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToCarPage", sender: nil)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,20 +52,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        // Segue to the second view controller
-        self.performSegue(withIdentifier: "segue", sender: self)
-    }
-    
     // This function is called before the segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         // get a reference to the second view controller
         let viewController = segue.destination as! DetailsViewController
-        
-        if let indexPath = tableView.indexPathForSelectedRow{
-            viewController.receivedCell = arrayOfCellData[indexPath.row]
+                if let indexPath = tableView.indexPathForSelectedRow{
+                    viewController.receivedCell = arrayOfCellData[indexPath.row]
            
         }
 

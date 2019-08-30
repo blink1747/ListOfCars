@@ -44,7 +44,7 @@
                     <navigationItem key="navigationItem" id="cyY-BD-Dqz"/>
                     <connections>
                         <outlet property="tableView" destination="eQ5-Dq-R43" id="APg-ZF-dwm"/>
-                        <segue destination="Img-Bz-MkF" kind="show" identifier="segue" id="5Bu-jf-Pel"/>
+                        <segue destination="Img-Bz-MkF" kind="show" identifier="goToCarPage" id="ZaN-XH-o4u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -62,15 +62,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="itj-ET-21P">
                                 <rect key="frame" x="57" y="104" width="300" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="2kP-En-lzv"/>
-                                    <constraint firstAttribute="width" constant="300" id="kzq-lW-IjV"/>
+                                    <constraint firstAttribute="height" constant="300" id="JXI-gB-oQ3"/>
+                                    <constraint firstAttribute="width" constant="300" id="Y4t-xj-Ihh"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeB-YA-zF4">
-                                <rect key="frame" x="177" y="420" width="60" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="coT-Eh-Uqe"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeB-YA-zF4">
+                                <rect key="frame" x="177.5" y="420" width="59.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -78,10 +75,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="XeB-YA-zF4" firstAttribute="top" secondItem="itj-ET-21P" secondAttribute="bottom" constant="16" id="7IE-BR-aw5"/>
-                            <constraint firstItem="itj-ET-21P" firstAttribute="top" secondItem="IVm-NA-wGY" secondAttribute="top" constant="16" id="YDq-V5-wIG"/>
-                            <constraint firstItem="XeB-YA-zF4" firstAttribute="centerX" secondItem="BgH-8R-32Z" secondAttribute="centerX" id="hbZ-Aw-JKK"/>
-                            <constraint firstItem="itj-ET-21P" firstAttribute="centerX" secondItem="BgH-8R-32Z" secondAttribute="centerX" id="nyV-RB-AFA"/>
+                            <constraint firstItem="XeB-YA-zF4" firstAttribute="centerX" secondItem="BgH-8R-32Z" secondAttribute="centerX" id="BJj-rD-tQR"/>
+                            <constraint firstItem="XeB-YA-zF4" firstAttribute="top" secondItem="itj-ET-21P" secondAttribute="bottom" constant="16" id="Df7-Wd-OfA"/>
+                            <constraint firstItem="itj-ET-21P" firstAttribute="top" secondItem="IVm-NA-wGY" secondAttribute="top" constant="16" id="Vob-kR-DMs"/>
+                            <constraint firstItem="itj-ET-21P" firstAttribute="centerX" secondItem="BgH-8R-32Z" secondAttribute="centerX" id="g1g-XG-EOn"/>
+                            <constraint firstItem="itj-ET-21P" firstAttribute="top" secondItem="IVm-NA-wGY" secondAttribute="top" constant="16" id="mHA-WW-jtb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IVm-NA-wGY"/>
                     </view>
@@ -110,7 +108,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcP-Pd-dP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-181" y="113"/>
+            <point key="canvasLocation" x="235" y="113"/>
         </scene>
     </scenes>
 </document>
